@@ -22,17 +22,12 @@ export default defineNuxtConfig({
       ],
     },
   },
+  components: [
+    { path: '~/components/pages', prefix: 'P' },
+    '~/components',
+  ],
   image: {
-    format: ['webp', 'png', 'jpg'],
-    presets: {
-      avatar: {
-        modifiers: {
-          format: 'webp',
-          width: 80,
-          height: 80,
-        },
-      },
-    },
+    format: ['webp', 'png', 'jpg', 'jpeg'],
   },
   colorMode: {
     classSuffix: '',
